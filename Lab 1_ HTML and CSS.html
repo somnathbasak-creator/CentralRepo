@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Lab 1: HTML and CSS</title>
+    <link href="../../web/handout/handout-style.css" rel="stylesheet"></link>
+    <!-- <link href="../../../web/handout-style-v1.css" rel="stylesheet"></link> -->
+    <meta name="read-only" content="true">
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+    <meta name="author" content="none">
+    <script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=ceTZ4NF8I6IxuR1nA_GmMRkoCSgytvgNp-_noE5b8qEzsKF-niLikDKG_ZCwVxyFlyV530_iVNzVILGyAAU3cURir21gMT62ahET8G-ZIws" charset="UTF-8"></script><style>
+        .flush-right {
+            position:   relative;
+            float:      right;
+            margin:     1em;
+            margin-top:     0;
+            margin-bottom:  3em;
+        }
+
+        div.caption {
+            font-style: italic;
+            text-align: center;
+        }
+
+        .flush-right > img{
+            border: thin solid #a0a0a0;
+        }
+
+        p.due-info{
+            border: 1px solid rgb(160, 159, 129);
+            padding: 0.5em 1em;
+            background: rgb(250, 255, 226) none repeat scroll 0% 0%;
+        }
+
+        span.html-tag {
+            font-family: monospace;
+            font-size: smaller;
+        }
+
+        .figure {
+            border: 1px solid;
+            display: inline-block
+        }
+
+    </style>
+  </head>  <body>
+
+    <header>6.813/6.831 User Interface Design &amp; Implementation</header>
+    <nav class="table-of-contents"></nav>
+
+    <main>
+        <div class="col-sm-8 col-sm-offset-2">
+
+          <!-- <div id="body-pane"> -->
+          <div id="content-box">
+            <p class="due-info">
+            This lab was held on <b>Thursday, February 4, 2016</b> at <b>7:30 P.M.</b> in <b>32-082.</b>
+            <br>
+             This is a non-compulsory programming lab to introduce students to webpage building with HTML and CSS.
+             <br>
+             View <a href="view-source:https://web.mit.edu/6.813/www/sp16/labs/lab1-html-css/home.html">the source</a> of <a href="home.html">this page</a> to see a
+             nicely documented solution to the exercises below.
+            </p>
+
+            <p><b>Last Updated</b>: Sun, Jan 31 2015 at 10:30 P.M.</p>
+
+            <h2>Overview</h2>
+
+            <p> In this programming lab, you will be completing a series of
+            exercises that will help you structure and style web pages.
+            Here's a picture of what your webpage will look like when you're done.
+            </p>
+            <img src="ex1-example.png" border=1px />
+
+            <h2>Required Resources</h2>
+            <p>You will need a a text editor, preferably with syntax highlighting.
+            We recommend using <a href="http://www.sublimetext.com/">Sublime Text</a>, available on OS X, Windows and Linux.</p>
+
+            <h2>References</h2>
+            <ul>
+                <li><a href="http://crowdy.juhokim.com/">Helpful videos selected by TAs</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/HTML">HTML reference</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/CSS/Getting_Started">CSS reference</a></li>
+                <li><a href="https://docs.google.com/presentation/d/1ztVhv_-6FDi1SXfwI6ZbRG_sZ5gB7kqQci_OrjL7xcg/edit?usp=sharing">A condensed CSS primer by 6.831 staff</a> (It is a Google Presentation, and comments are allowed.)</li>
+            </ul>
+
+            <h2>Exercise 0: Build Dog's website from scratch</h2>
+            For this exercise, open up your text editor and follow along with what we do on the projector. Starting from a blank file, we will:
+            <ul>
+                <li>Use basic HTML tags to define the overall structure of a web page.</li>
+                <li>Add some text content to the web page.</li>
+                <li>Add an image to the web page.</li>
+                <li>Separate the web page into sections and give each section a
+                heading.</li>
+                <li>Apply some basic style to the sections using CSS rules.</li>
+            </ul>
+
+            <div>
+                <strong style="color:#cc3333">Featured videos:</strong>&nbsp;&nbsp;&nbsp;
+                <a href="http://crowdy.juhokim.com/play/25/" target="_blank">Introduction to styling with CSS</a>
+            </div>
+
+            <h2>Exercise 1: Make the page your own</h2>
+            Modify the page's content to make it your own website.
+            <ul>
+              <li>Replace the name in the page's title with your own.</li>
+              <li>Replace the interests listed with your own.</li>
+              <li>Replace the picture of Dog with a picture of yourself.</li>
+            </ul>
+
+
+            <h2>Exercise 2: Style your page using Chrome Inspector (F12) or FireBug</h2>
+            <p>Use the Chrome Inspector or Firebug to inspect your elements and play with CSS rules.
+            Here is a good <a href="https://developer.mozilla.org/en-US/docs/CSS/Getting_Started/Selectors">
+            reference on CSS selectors</a>.</p>
+            <ul>
+                <li>Change heading fonts to Georgia and color them maroon.</li>
+                <li>Make links colored differently when you hover and have visited them.</li>
+            </ul>
+
+            <div>
+                <strong style="color:#cc3333">Featured videos:</strong>&nbsp;&nbsp;&nbsp;
+                <a href="http://crowdy.juhokim.com/play/20/" target="_blank">Adding Style Rules Using Google Chrome Developer Tools</a>
+            </div>
+
+            <h2>Exercise 3: Add and style a table of courses</h2>
+            <p>Modify the page to include a table of courses you are taking and have taken.
+            Here are some <a href="https://developer.mozilla.org/en-US/docs/HTML/Element/table#Examples">
+            examples of simple tables</a>. Your table should have:</p>
+            <ul>
+                <li>three columns: course number, course title, and semester taken</li>
+                <li>two vertical sections, with headers for courses taken 'For Credit' and as 'Listener'</li>
+                <li>alternating row background colors, so it's easy to read</li>
+                <li>green colored text if the class is currently being taken</li>
+            </ul>
+
+            <div>
+              <strong style="color:#cc3333">Featured videos:</strong>&nbsp;&nbsp;&nbsp;
+              <a href="http://crowdy.juhokim.com/play/22/" target="_blank">HTML Website Tables &amp; Layouts Tutorial</a>
+            </div>
+            <br/>
+
+            <div>It should look something like this:</div>
+            <img src="ex3-example.png" border=1px /><br><br>
+
+            <h2>Exercise 4: Positioning</h2>
+            <p>Use Inspector/Firebug to try different layouts using the CSS position directive.
+            Move your picture, interests and course info around.
+            Here's a reference on <a href="https://developer.mozilla.org/en-US/docs/CSS/position">
+            CSS positioning</a>. Put your picture on the right and the rest of your info on the left.</p>
+
+            <div>
+              <strong style="color:#cc3333">Featured videos:</strong>
+              <ul>
+                <li><a href="http://crowdy.juhokim.com/play/23/" target="_blank">CSS Absolute and Relative Positioning Tutorial</a></li>
+                <li><a href="http://crowdy.juhokim.com/play/24/" target="_blank">Making Divs Side by Side using CSS</a>
+                </li>
+              </ul>
+            </div>
+
+            <div>It should look something like this:</div>
+            <img src="ex4-example.png" border=1px />
+
+            <h2>Exercise 5: Add a Form</h2>
+            <p>Add a form which visitors of your website can use to submit information about their pet.
+            Here's a <a href="https://developer.mozilla.org/en-US/docs/HTML/Element/form">
+            reference on forms</a>.</p>
+
+            <ul>
+                <li>Add textboxes for the pet's name, gender and phylum.</li>
+                <li>Add a Submit button.</li>
+            </ul>
+
+            <div>
+              <p><strong style="color:#cc3333">Featured videos:</strong>&nbsp;&nbsp;&nbsp;
+              <a href="http://crowdy.juhokim.com/play/26/" target="_blank">How to create forms in HTML5</a></p>
+            </div>
+
+            <h2>Exercise 6: Codecademy Exercises</h2>
+            <p>Do the projects on the <a href="http://www.codecademy.com/tracks/web">Codecademy website</a>.</p>
+
+          </div>
+        </div>
+    </main>
+    <footer>MIT EECS</footer>
+    <script src="../../web/handout/handout-render.js"></script>
+    <!--script src="../../../web/handout-script-v1.js"></script-->
+  </body>
+</html>
